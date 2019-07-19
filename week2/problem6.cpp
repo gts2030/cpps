@@ -17,7 +17,6 @@ public:
 			pt = pt->next;
 			pt2 = pt2->next->next;
 		}
-		std::cout << "pt : " << pt->val << std::endl;
 
 		ListNode* dummy = new ListNode(0);
 		dummy->next = pt->next;
