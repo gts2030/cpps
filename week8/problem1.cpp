@@ -1,3 +1,4 @@
+// O(N * 2^N)/O(1)
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
