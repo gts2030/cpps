@@ -2,7 +2,6 @@
 class Solution {
 public:
     int getSum(int a, int b) {
-        // Iterate till there is no carry  
         while (b != 0) {
             int carry = a & b;  
             a = a ^ b;  
