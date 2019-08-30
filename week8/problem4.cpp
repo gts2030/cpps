@@ -1,3 +1,4 @@
+// O(N) / O(N)
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
