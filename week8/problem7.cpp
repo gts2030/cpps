@@ -1,4 +1,4 @@
-// O(log(max(a,b)))/O(1)
+// O(1)/O(1)
 class Solution {
 public:
     int getSum(int a, int b) {
