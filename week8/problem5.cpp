@@ -1,4 +1,4 @@
-// O(log(N))/O(1)
+// O(1)/O(1)
 class Solution {
 public:
     int rangeBitwiseAnd(int m, int n) {
