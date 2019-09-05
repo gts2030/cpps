@@ -1,4 +1,4 @@
-// O(N) / O(1)
+// O(log(x)) / O(1)
 #include <cmath>
 class Solution {
 public:
