@@ -1,0 +1,43 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: clang++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++17",
+                "-stdlib=libc++",
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                // 1. execute .out file
+                "&&", //to join building and running of the file
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "디버거에서 생성된 작업입니다."
+        },
+        {
+            "label": "exec",
+            "type": "shell",
+            "command": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "group": {
+              "kind": "build",
+              "isDefault": true
+            }
+        }
+        
+    ],
+    "version": "2.0.0"
+}
